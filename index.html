@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde está WLAN?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            margin: 0;
+            background-color: #333;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        img {
+            border: 2px solid #fff;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .mensagem {
+            background-color: #444;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Onde está Wlan?</h1>
+
+    <img src="wlan.jpeg" alt="Imagem WLAN" width="200">
+
+    <script>
+        // Função para calcular a diferença em dias entre duas datas
+        function calcularDiferencaEmDias(data1, data2) {
+            const umDiaEmMilissegundos = 24 * 60 * 60 * 1000; // Número de milissegundos em um dia
+            const diferencaEmMilissegundos = Math.abs(data2 - data1);
+            return Math.floor(diferencaEmMilissegundos / umDiaEmMilissegundos);
+        }
+
+        // Obtém a data atual
+        const dataAtual = new Date();
+
+        // Define a data alvo (09 de novembro de 2023)
+        const dataAlvo = new Date('2023-11-09');
+
+        // Calcula a diferença em dias
+        const diferencaEmDias = calcularDiferencaEmDias(dataAtual, dataAlvo);
+
+        // Exibe o resultado na página
+        document.write(`<p>São exatamente ${diferencaEmDias} dias desde que nosso querido primo Wlanderson “Lukaku” Silva partiu para os braços do Pai. Uma perda irreparável, uma consequência imensurável que o Suarez provocou em nosso talentoso jogador de CS da Eldorado Games. 🥀</p>`);
+
+        // Mensagem procurando resposta e demandando ação
+        document.write('<div class="mensagem">');
+        document.write('<p>A comunidade do futebol exige uma resposta do governo Lula sobre o desaparecimento do nosso querido botafoguense. Onde está Wlan? Precisamos de ação e esclarecimentos!</p>');
+        document.write('</div>');
+    </script>
+
+</body>
+
+</html>
